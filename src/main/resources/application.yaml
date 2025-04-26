@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: UniProj
+  data:
+    jdbc:
+      dialect: postgresql
+  datasource:
+    username: postgres
+    password: 12345678
+    url: jdbc:postgresql://localhost:5432/UniProjDB
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  security:
+    user:
+      name: admin
+      password: admin
